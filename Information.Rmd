@@ -1,0 +1,21 @@
+In this shinyapp we use the data diamonds available in ggplot2 (see http://docs.ggplot2.org/current/diamonds.html)
+The objective of the aplication is to make a price prediction of the diamond based on
+these predictors:
+
+* carat. weight of the diamond (0.2--5.01)
+* cut. quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+* colour. diamond colour, from J (worst) to D (best)
+* clarity. a measurement of how clear the diamond is (I1 (worst), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (best))
+
+For this purpose, the user can chose among diferent models and define the tuning parameters:
+
+* Tree model
+* Random Forest
+* GBM
+
+Finally, based on the last model selected, the user can make single predictions of a diamond price.
+
+### Data treatment
+
+The data is split in training set (60%) and testing set (40%). This split changes every time that a session is started.
+The exploratory analysis and the model fit is made with the training set.
